@@ -1,0 +1,22 @@
+#actor {
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
+  background: url(images/minion.png) center center / cover no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: calc(var(--size) / 2) var(--size);
+  animation: bob 1s infinite;
+  transition: .3s linear;
+}
+
+@keyframes bob {
+  25% {
+      transform: rotate(-10deg);
+  }
+
+  75% {
+      transform: rotate(10deg);
+  }
+}
